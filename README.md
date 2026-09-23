@@ -15,7 +15,8 @@
 
 IT Resume Architect demonstrates how prompt engineering can be used to analyze, improve, and tailor resumes. It focuses on structured instructions, reusable prompt blocks, controlled outputs, and privacy-aware execution.
 
-The repository currently includes the project documentation, the system prompt, and a sample ATS-friendly resume. The repository does **not** currently contain runnable application source code or an actual UI screenshot, so this README intentionally does not present the previous placeholder graphic as a real product screenshot.
+The repository currently includes the project documentation, the system prompt, and a sample ATS-friendly resume.
+
 
 ## What the project demonstrates
 
@@ -54,11 +55,10 @@ Open the included [sample ATS resume](./Alex_Morgan_Software_Engineer_ATS_Resume
 
 Review the [ChatGPT API system prompt](./Chat%20gpt_API%20System%20Prompt) to see the instructions used for structured analysis, optimization, and career guidance.
 
-> **Screenshots:** No genuine application screenshots are included yet because the current repository does not contain a runnable UI or captured app screens. Add screenshots under `assets/screenshots/` when the application interface is available, then embed them here using repository-relative Markdown links.
 
 ## Installation and usage
 
-There is no installable application in the current repository yet. The available demonstration materials can be used as follows:
+
 
 1. Clone the repository:
 
@@ -102,6 +102,3 @@ Do not commit real personal resumes, API keys, passwords, or other sensitive inf
 
 Contributions and feedback are welcome. Please open an issue describing the proposed improvement before submitting a pull request.
 
-## License
-
-No license file is currently included. Add a `LICENSE` file before distributing or reusing this project outside the repository.
