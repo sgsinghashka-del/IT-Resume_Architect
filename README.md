@@ -5,7 +5,7 @@
 Prompt-Driven Resume Analysis, Optimization & Career Guidance
 
 <p align="center">
-  <img src="assets/project-presentation.svg" alt="Project presentation screenshot for IT Resume Architect" width="900" />
+  <img src="https://raw.githubusercontent.com/sgsinghashka-del/IT-Resume_Architect/main/assets/project-presentation.svg" alt="IT Resume Architect project presentation screenshot" width="900" />
 </p>
 
 ## Project Overview
