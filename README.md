@@ -1,114 +1,107 @@
 # IT Resume Architect
 
-📄 Resume Builder using Prompt Engineering
-
-Prompt-Driven Resume Analysis, Optimization & Career Guidance
-
 <p align="center">
-  <img src="https://raw.githubusercontent.com/sgsinghashka-del/IT-Resume_Architect/main/assets/project-presentation.svg" alt="IT Resume Architect project presentation screenshot" width="900" />
+  <strong>Prompt-driven resume analysis, optimization, and career guidance</strong>
 </p>
 
-## Project Overview
+<p align="center">
+  <a href="https://github.com/sgsinghashka-del/IT-Resume_Architect"><img src="https://img.shields.io/github/stars/sgsinghashka-del/IT-Resume_Architect?style=flat-square" alt="GitHub stars"></a>
+  <a href="https://github.com/sgsinghashka-del/IT-Resume_Architect/issues"><img src="https://img.shields.io/github/issues/sgsinghashka-del/IT-Resume_Architect?style=flat-square" alt="GitHub issues"></a>
+  <a href="https://github.com/sgsinghashka-del/IT-Resume_Architect/commits/main"><img src="https://img.shields.io/github/last-commit/sgsinghashka-del/IT-Resume_Architect?style=flat-square" alt="Last commit"></a>
+  <a href="https://github.com/sgsinghashka-del/IT-Resume_Architect/blob/main/README.md"><img src="https://img.shields.io/badge/documentation-README-blue?style=flat-square" alt="Documentation"></a>
+</p>
 
-This project demonstrates how Prompt Engineering can be leveraged to build an intelligent resume analysis and optimization system.
-The application uses carefully designed prompts to extract, interpret, and enhance resume content, generating context-aware insights without hard-coding business logic.
+## Overview
 
-The system supports both:
+IT Resume Architect demonstrates how prompt engineering can be used to analyze, improve, and tailor resumes. It focuses on structured instructions, reusable prompt blocks, controlled outputs, and privacy-aware execution.
 
-- Cloud-based LLM execution
-- Offline rule-driven prompt execution
+The repository currently includes the project documentation, the system prompt, and a sample ATS-friendly resume. The repository does **not** currently contain runnable application source code or an actual UI screenshot, so this README intentionally does not present the previous placeholder graphic as a real product screenshot.
 
-This makes it suitable for privacy-sensitive and enterprise environments.
+## What the project demonstrates
 
-## Core Objective
+- Convert unstructured resume content into structured insights
+- Extract skills, experience, and career signals
+- Score resume quality and role alignment
+- Identify career gaps and recommend improvements
+- Support online LLM execution and deterministic offline processing
+- Keep prompt logic, business rules, and presentation concerns separated
 
-To showcase how Prompt Engineering techniques can:
+## Prompt architecture
 
-- Convert unstructured resume data into structured insights
-- Improve resume quality through controlled prompt instructions
-- Generate role-specific career recommendations
-- Ensure consistency, security, and explainability in outputs
+The prompt workflow is designed around:
 
-## Key Concepts Demonstrated
+1. **Input normalization** — read and structure resume content.
+2. **Context management** — preserve relevant information across prompt steps.
+3. **Analysis** — extract skills, experience, gaps, and career signals.
+4. **Optimization** — produce role-specific recommendations and resume improvements.
+5. **Validation** — constrain output formats for predictable, explainable results.
 
-- Prompt engineering for resume analysis
-- Instruction-driven content extraction
-- Context-aware prompt chaining
-- Token-limited prompt chunking
-- Deterministic prompt execution (offline mode)
-- Secure, role-based workflow routing
+## Repository contents
 
-## Features
-
-### Prompt-Driven Resume Parsing
-- Extracts skills, experience, and career signals using structured prompts
-- Handles unstructured PDF resumes
-- Maintains context across multiple prompt executions
-
-### Prompt Engineering Architecture
-- Modular prompt templates
-- Clear system / user / instruction separation
-- Reusable prompt blocks for:
-  - Skill extraction
-  - Career gap analysis
-  - Resume scoring
-  - Role alignment
-
-### Dual Execution Modes
-
-| Mode | Description |
+| File | Description |
 | --- | --- |
-| Online Prompt Execution | LLM-powered dynamic prompt responses |
-| Offline Prompt Execution | Rule-based deterministic prompt logic (no API calls) |
+| [`Chat gpt_API System Prompt`](./Chat%20gpt_API%20System%20Prompt) | System prompt used to guide resume analysis and optimization |
+| [`Alex_Morgan_Software_Engineer_ATS_Resume.pdf`](./Alex_Morgan_Software_Engineer_ATS_Resume.pdf) | Sample ATS-friendly resume for demonstration |
+| [`README.md`](./README.md) | Project documentation |
 
-### Security
-- SHA-256 password hashing
-- Role-based access control (Admin / User)
-- Isolated user resume sessions
-- Secure local data storage
+## Demo material
 
-### Resume Analytics & Visualization
-- Skill distribution charts
-- Career progression paths
-- Resume quality indicators
-- Interactive Plotly visualizations
+### Sample resume
 
-## Prompt Engineering Design
+Open the included [sample ATS resume](./Alex_Morgan_Software_Engineer_ATS_Resume.pdf) to inspect the document used as demonstration input.
 
-This project emphasizes controlled prompting over black-box responses:
+### Prompt demonstration
 
-- Explicit task instructions
-- Constrained output formats
-- Context windows managed under token limits
-- Clear separation between prompt logic, business rules, and UI rendering
+Review the [ChatGPT API system prompt](./Chat%20gpt_API%20System%20Prompt) to see the instructions used for structured analysis, optimization, and career guidance.
 
-This approach ensures:
+> **Screenshots:** No genuine application screenshots are included yet because the current repository does not contain a runnable UI or captured app screens. Add screenshots under `assets/screenshots/` when the application interface is available, then embed them here using repository-relative Markdown links.
 
-- Predictable outputs
-- Easier debugging
-- Enterprise-readiness
+## Installation and usage
 
-## Example Use Cases
+There is no installable application in the current repository yet. The available demonstration materials can be used as follows:
 
-- Resume quality improvement
-- Role-specific resume tailoring
-- Skill gap identification
-- Career transition guidance
-- Offline resume screening tools
+1. Clone the repository:
 
-## Scalability & Extensions
+   ```bash
+   git clone https://github.com/sgsinghashka-del/IT-Resume_Architect.git
+   cd IT-Resume_Architect
+   ```
 
-- Swap SQLite with PostgreSQL
-- Add vector embeddings for semantic resume search
-- Extend prompt templates for job-description matching
-- Deploy using Docker or cloud services
+2. Open the sample resume:
+
+   ```text
+   Alex_Morgan_Software_Engineer_ATS_Resume.pdf
+   ```
+
+3. Review and adapt the system prompt:
+
+   ```text
+   Chat gpt_API System Prompt
+   ```
+
+4. To run an application, add the project source and dependency manifest (for example, `requirements.txt` or `pyproject.toml`) and document the framework-specific start command here.
+
+## Planned capabilities
+
+- Resume parsing from PDF and text inputs
+- Skill distribution and career progression visualizations
+- Role-specific job-description matching
+- Offline, deterministic analysis mode
+- Secure local storage and role-based access control
+- Optional PostgreSQL and vector-search integrations
+
+## Security and privacy
+
+Do not commit real personal resumes, API keys, passwords, or other sensitive information. Use synthetic or redacted documents for demonstrations and keep secrets in environment variables.
 
 ## Author
 
-Ashka Singh
+**Ashka Singh**
 
-## Support
+## Contributing
 
-If you find this project useful, give it a ⭐ on GitHub.
+Contributions and feedback are welcome. Please open an issue describing the proposed improvement before submitting a pull request.
 
-Contributions and feedback are welcome.
+## License
+
+No license file is currently included. Add a `LICENSE` file before distributing or reusing this project outside the repository.
